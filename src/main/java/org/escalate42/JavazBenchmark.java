@@ -50,7 +50,7 @@ public class JavazBenchmark {
 
     @Benchmark
     @BenchmarkMode(Mode.AverageTime)
-    @OutputTimeUnit(TimeUnit.MILLISECONDS)
+    @OutputTimeUnit(TimeUnit.NANOSECONDS)
     public String stringConcat() {
         final String s1 = "i ";
         final String s2 = "am ";
@@ -61,7 +61,7 @@ public class JavazBenchmark {
 
     @Benchmark
     @BenchmarkMode(Mode.AverageTime)
-    @OutputTimeUnit(TimeUnit.MILLISECONDS)
+    @OutputTimeUnit(TimeUnit.NANOSECONDS)
     public Option<String> optionYieldForTest() {
         return OptionOps.id.yieldFor(
                 some("i "), some("am "), some("little "), some("option"),
