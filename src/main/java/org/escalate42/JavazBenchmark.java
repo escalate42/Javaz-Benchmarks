@@ -72,7 +72,7 @@ public class JavazBenchmark {
     public static void main(final String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
                 .include(JavazBenchmark.class.getSimpleName())
-                .warmupIterations(50)
+                .warmupIterations(100)
                 .measurementIterations(100)
                 .forks(1)
                 .build();
