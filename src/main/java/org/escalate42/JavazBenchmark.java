@@ -73,8 +73,8 @@ public class JavazBenchmark {
         Options opt = new OptionsBuilder()
                 .include(JavazBenchmark.class.getSimpleName())
                 .warmupIterations(50)
-                .measurementIterations(10000)
-                .forks(5)
+                .measurementIterations(100)
+                .forks(1)
                 .build();
         new Runner(opt).run();
     }
